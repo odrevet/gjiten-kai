@@ -50,11 +50,6 @@ By reading the use case located at https://github.com/odrevet/gjitenkai/wiki/Sea
 * Threaded dictionary loading 
 * Download dictionaries 
 
-# Web site  
-
-http://odrevet.github.io/gjitenkai/
-
-
 # Credits
 * Gjiten kai developer (2015 - ...) Olivier Drevet
 * Special Thanks to the Original Gjiten developer (1999 - 2005) Botond Botyanszki 
