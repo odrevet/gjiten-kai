@@ -20,7 +20,7 @@ along with GjitenKai グジテン改.  If not, see <http://www.gnu.org/licenses/
 
 -->
 <interface domain="gjitenkai">
-  <requires lib="gtk+" version="3.20"/>
+  <requires lib="gtk+" version="3.18"/>
   <!-- interface-license-type gplv3 -->
   <!-- interface-name GjitenKai \343\202\260\343\202\270\343\203\206\343\203\263\346\224\271 -->
   <!-- interface-description Rewrite of Gjiten - A Japanese Dictionary -->
