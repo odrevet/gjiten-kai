@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-19 10:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/gjitenkai/worddic.glade:1016
+msgid ""
+"<b>Welcome to the Gnome Japanese dictionary 'Gjiten Kai グジテン改'</b>\n"
+"\n"
+"To start seaching you need an <i>EDICT dictionary file </i>. \n"
+"\n"
+"You can download one at the <a href=\"http://ftp.monash.edu.au/pub/"
+"nihongo/00INDEX.html#dic_fil\">Official EDICT website</a>\n"
+"\n"
+"Then add it in Gjiten Kai using the <b>Edit/Preferences Menu</b> \n"
+"<b>Worddic - Dictionaries - Add</b>\n"
+"\n"
+msgstr ""
+"<b>Bienvenue dans 'Gjiten Kai グジテン改'</b>\n"
+"\n"
+"Pour commencer une recherche vous devez avoir un <i>fichier dictionnaire EDICT</i>. \n"
+"\n"
+"Vous pouvez en Télécharger un sur le <a href=\"http://ftp.monash.edu.au/pub/"
+"nihongo/00INDEX.html#dic_fil\">Site officiel d'EDICT</a>. \n (il existe une version en français nommée kanjidic_fr.gz)\n"
+"\n"
+"Puis l'ajouter dans Gjiten Kai via le <b>menu Edition/Préférences</b> \n"
+"<b>Worddic - Dictionnaires - Ajouter</b>\n"
+"\n"
+
+
+#: share/gjitenkai/worddic.glade:451
+msgid "Activate Dark Theme"
+msgstr "Activer le thème sombre"
+
+#: share/gjitenkai/worddic.glade:506
+msgid "Active"
+msgstr "Activé"
+
+#: share/gjitenkai/worddic.glade:572
+msgid "Add"
+msgstr "Ajouter"
+
+#: share/gjitenkai/worddic.glade:836 share/gjitenkai/worddic.glade:908
+msgid "Any Matches"
+msgstr "Tout"
+
+#: share/gjitenkai/worddic.glade:470
+msgid "Appearance"
+msgstr "Apparence"
+
+#: share/gjitenkai/worddic.glade:442
+msgid "Dark theme"
+msgstr "Thème sombre"
+
+#: share/gjitenkai/worddic.glade:630
+msgid "Dictionaries"
+msgstr "Dictionnaires"
+
+#: share/gjitenkai/worddic.glade:600
+msgid "Edit"
+msgstr "Edition"
+
+#: share/gjitenkai/worddic.glade:859
+msgid "End With Expression"
+msgstr "Fini par l'Expression"
+
+#: share/gjitenkai/worddic.glade:1195
+msgid "Enter expression"
+msgstr "Entrer une expression"
+
+#: share/gjitenkai/worddic.glade:824
+msgid "Exact Match"
+msgstr "Exacte"
+
+#: share/gjitenkai/worddic.glade:742
+msgid "Gjiten Kai グジテン改 - Worddic"
+msgstr ""
+
+#: share/gjitenkai/worddic.glade:114
+msgid "Gloss / Sub Gloss"
+msgstr ""
+
+#: share/gjitenkai/worddic.glade:75
+msgid "Highlight Color"
+msgstr "Couleur de surlignage"
+
+#: share/gjitenkai/worddic.glade:927
+msgid "History"
+msgstr "Historique"
+
+#: share/gjitenkai/worddic.glade:814
+msgid "Japanese"
+msgstr "Japonais"
+
+#: share/gjitenkai/worddic.glade:88
+msgid "Japanese Definition"
+msgstr "Définition Japonaise"
+
+#: share/gjitenkai/worddic.glade:101
+msgid "Japanese Reading"
+msgstr "Lecture Japonaise"
+
+#: share/gjitenkai/worddic.glade:874
+msgid "Latin"
+msgstr ""
+
+#: share/gjitenkai/worddic.glade:520
+msgid "Loaded"
+msgstr "Chargé"
+
+#: share/gjitenkai/worddic.glade:494 share/gjitenkai/worddic.glade:1150
+msgid "Name"
+msgstr "Nom"
+
+#: share/gjitenkai/worddic.glade:419
+msgid "Notes"
+msgstr ""
+
+#: share/gjitenkai/worddic.glade:1056 share/gjitenkai/worddic.glade:1101
+msgid "OK"
+msgstr ""
+
+#: share/gjitenkai/worddic.glade:993
+msgid "Okey ! "
+msgstr "Compris !"
+
+#: share/gjitenkai/worddic.glade:535 share/gjitenkai/worddic.glade:1129
+msgid "Path"
+msgstr "Chemin"
+
+#: share/gjitenkai/worddic.glade:791
+msgid "Preferences"
+msgstr "Préférences"
+
+#: share/gjitenkai/worddic.glade:692
+msgid "Record search history"
+msgstr "Enregistrer les recherches dans l'historique"
+
+#: share/gjitenkai/worddic.glade:586
+msgid "Remove"
+msgstr "Retirer"
+
+#: share/gjitenkai/worddic.glade:715
+msgid "Search Options"
+msgstr "Options de recherche"
+
+#: share/gjitenkai/worddic.glade:660
+msgid "Search for Hiragana on Katakana input"
+msgstr "Chercher avec des Hiragana au lieu des Katakana"
+
+#: share/gjitenkai/worddic.glade:644
+msgid "Search for Katakana on Hiragana input"
+msgstr "Chercher avec des Katakana au lieu des Hiragana"
+
+#: share/gjitenkai/worddic.glade:847
+msgid "Start With Expression"
+msgstr "Commence avec l'Expression"
+
+#: share/gjitenkai/worddic.glade:676
+msgid "Verbs and Adjectives deinflection"
+msgstr "Déinflexion des verbes et des adjectifs en i"
+
+#: share/gjitenkai/worddic.glade:884
+msgid "Whole Expression"
+msgstr "Toute l'Expression"
+
+#: share/gjitenkai/worddic.glade:897
+msgid "Whole Words"
+msgstr "Mot entier"
+
+#: share/gjitenkai/worddic.glade:781
+msgid "_Edit"
+msgstr "_Edition"
+
+#: share/gjitenkai/worddic.glade:757
+msgid "_File"
+msgstr "_Fichier"
+
+#: share/gjitenkai/worddic.glade:941
+msgid "_Help"
+msgstr "_Aide"
+
+#: share/gjitenkai/worddic.glade:804
+msgid "_Search"
+msgstr "_Chercher"

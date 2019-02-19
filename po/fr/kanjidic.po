@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-19 10:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/gjitenkai/kanjidic.glade:524
+msgid "+/-"
+msgstr ""
+
+#: share/gjitenkai/kanjidic.glade:333
+msgid "About"
+msgstr "A Propos"
+
+#: share/gjitenkai/kanjidic.glade:208
+msgid "Appearance"
+msgstr "Apparence"
+
+#: share/gjitenkai/kanjidic.glade:609
+msgid "Clear"
+msgstr "Effacer"
+
+#: share/gjitenkai/kanjidic.glade:232
+msgid "Dictionary"
+msgstr "Dictionnaire"
+
+#: share/gjitenkai/kanjidic.glade:167
+msgid "Items"
+msgstr "Champ"
+
+#: share/gjitenkai/kanjidic.glade:180
+msgid "Kanji Candidates"
+msgstr "Kanji-Candidats"
+
+#: share/gjitenkai/kanjidic.glade:140
+msgid "Kanji font"
+msgstr "Police du Kanji"
+
+#: share/gjitenkai/kanjidic.glade:552
+msgid "Keys"
+msgstr "Clés"
+
+#: share/gjitenkai/kanjidic.glade:371
+msgid "OK"
+msgstr ""
+
+#: share/gjitenkai/kanjidic.glade:302
+msgid "Preferences"
+msgstr "Préférences"
+
+#: share/gjitenkai/kanjidic.glade:279
+msgid "Quit"
+msgstr "Quitter"
+
+#: share/gjitenkai/kanjidic.glade:474
+msgid "Radicals"
+msgstr "Radicaux"
+
+#: share/gjitenkai/kanjidic.glade:578
+msgid "Search"
+msgstr "Chercher"
+
+#: share/gjitenkai/kanjidic.glade:154
+msgid "Separator"
+msgstr "Séparateur"
+
+#: share/gjitenkai/kanjidic.glade:595
+msgid "Show"
+msgstr "Afficher"
+
+#: share/gjitenkai/kanjidic.glade:459
+msgid "Strokes"
+msgstr "Traits"
+
+#: share/gjitenkai/kanjidic.glade:292
+msgid "_Edit"
+msgstr "_Edition"
+
+#: share/gjitenkai/kanjidic.glade:269
+msgid "_File"
+msgstr "Fichier"
+
+#: share/gjitenkai/kanjidic.glade:323
+msgid "_Help"
+msgstr "_Aide"
+
+#: share/gjitenkai/kanjidic.glade:315
+msgid "_View"
+msgstr "_Vue"

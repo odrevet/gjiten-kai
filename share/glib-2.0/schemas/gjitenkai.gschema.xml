@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="gjitenkai" path="/gjitenkai/">
+    <child name="worddic" schema="gjitenkai.worddic"/>
+    <child name="kanjidic" schema="gjitenkai.kanjidic"/>
+  </schema>
+  <schema id="gjitenkai.worddic" path="/gjitenkai/worddic/">
+    <key name="results-highlight-color" type="s">
+      <default>'rgb(85,87,83)'</default>
+    </key>
+    <key name="search-kata-on-hira" type="b">
+      <default>true</default>
+    </key>
+    <key name="search-hira-on-kata" type="b">
+      <default>true</default>
+    </key>
+    <key name="autoadjust-enabled" type="b">
+      <default>true</default>
+    </key>
+    <key name="deinflection-enabled" type="b">
+      <default>true</default>
+    </key>
+    <key name="searchlimit-enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="maxwordmatches" type="u">
+      <default>0</default>
+    </key>
+    <key name="resultsfont" type="s">
+      <default>'Sans 12'</default>
+    </key>
+    <key name="japanese-definition-font" type="s">
+      <default>'Sans Regular 14'</default>
+    </key>
+    <key name="japanese-definition-color" type="s">
+      <default>'rgb(245,121,0)'</default>
+    </key>
+    <key name="japanese-definition-start" type="s">
+      <default>'•'</default>
+    </key>
+    <key name="japanese-definition-end" type="s">
+      <default>''</default>
+    </key>
+    <key name="japanese-reading-font" type="s">
+      <default>'Sans Italic 12'</default>
+    </key>
+    <key name="japanese-reading-color" type="s">
+      <default>'rgb(115,210,22)'</default>
+    </key>
+    <key name="japanese-reading-start" type="s">
+      <default>'('</default>
+    </key>
+    <key name="japanese-reading-end" type="s">
+      <default>')'</default>
+    </key>
+    <key name="sense-font" type="s">
+      <default>'Sans Regular 12'</default>
+    </key>
+    <key name="sense-color" type="s">
+      <default>'rgb(80,80,0)'</default>
+    </key>
+    <key name="sense-start" type="s">
+      <default>''</default>
+    </key>
+    <key name="sense-end" type="s">
+      <default>''</default>
+    </key>
+    <key name="gloss-font" type="s">
+      <default>'Sans Regular 12'</default>
+    </key>
+    <key name="gloss-color" type="s">
+      <default>'rgb(252,233,79)'</default>
+    </key>
+    <key name="gloss-start" type="s">
+      <default>''</default>
+    </key>
+    <key name="gloss-end" type="s">
+      <default>';'</default>
+    </key>
+    <key name="notes-font" type="s">
+      <default>'Sans Regular 12'</default>
+    </key>
+    <key name="notes-color" type="s">
+      <default>'rgb(114,159,207)'</default>
+    </key>
+    <key name="notes-start" type="s">
+      <default>'['</default>
+    </key>
+    <key name="notes-end" type="s">
+      <default>']'</default>
+    </key>
+    <key name="system-theme" type="b">
+      <default>true</default>
+    </key>
+    <key name="dark-theme" type="b">
+      <default>false</default>
+    </key>
+    <key name="dictionaries" type="a(ssb)">
+      <default>[]</default>
+      <summary>List of dictionary files (paths and names)</summary>
+      <description>
+        List of dictionary files. Format is:
+        [/path/to/dicfile\ndictionary-name\nactive,/path/to/dicfile\ndictionary-name\nactive]
+        Don't put a space after the comma.
+        Name and path are strings, active is true or false (boolean)
+      </description>
+    </key>
+    <key name="record-history" type="b">
+      <default>true</default>
+    </key>
+    <key name="history" type="a(s)">
+      <default>[]</default>
+    </key>
+    <key name="lang" type="a(ssb)">
+      <default>
+	[
+	('English', 'eng', true),
+	('French', 'fre', false),
+	('German', 'ger', false),
+	('Russian', 'rus', false)
+	]
+
+</default>
+      <description>
+	List of language code and Name, boolean to enable / disable search
+      </description>
+    </key>
+  </schema>
+  <schema id="gjitenkai.kanjidic" path="/gjitenkai/kanjidic/">
+    <key name="translation" type="b">
+      <default>true</default>
+    </key>
+    <key name="freq" type="b">
+      <default>false</default>
+    </key>
+    <key name="kanji" type="b">
+      <default>true</default>
+    </key>
+    <key name="jouyou" type="b">
+      <default>true</default>
+    </key>
+    <key name="korean" type="b">
+      <default>false</default>
+    </key>
+    <key name="pinyin" type="b">
+      <default>false</default>
+    </key>
+    <key name="radical" type="b">
+      <default>true</default>
+    </key>
+    <key name="onyomi" type="b">
+      <default>true</default>
+    </key>
+    <key name="kunyomi" type="b">
+      <default>true</default>
+    </key>
+    <key name="nanori" type="b">
+      <default>false</default>
+    </key>
+    <key name="radname" type="b">
+      <default>false</default>
+    </key>
+    <key name="strokes" type="b">
+      <default>true</default>
+    </key>
+    <key name="bushu" type="b">
+      <default>false</default>
+    </key>
+    <key name="classic" type="b">
+      <default>false</default>
+    </key>
+    <key name="deroo" type="b">
+      <default>false</default>
+    </key>
+    <key name="skip" type="b">
+      <default>false</default>
+    </key>
+    <key name="fourc" type="b">
+      <default>false</default>
+    </key>
+    <key name="hindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="nindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="vindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="iindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="inindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="mnindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="mpindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="eindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="kindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="lindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="oindex" type="b">
+      <default>false</default>
+    </key>
+    <key name="cref" type="b">
+      <default>false</default>
+    </key>
+    <key name="missc" type="b">
+      <default>false</default>
+    </key>
+    <key name="translation-pos" type="i">
+      <default>1</default>
+    </key>
+    <key name="freq-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="kanji-pos" type="i">
+      <default>1</default>
+    </key>
+    <key name="jouyou-pos" type="i">
+      <default>1</default>
+    </key>
+    <key name="korean-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="pinyin-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="radical-pos" type="i">
+      <default>1</default>
+    </key>
+    <key name="onyomi-pos" type="i">
+      <default>1</default>
+    </key>
+    <key name="kunyomi-pos" type="i">
+      <default>1</default>
+    </key>
+    <key name="nanori-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="radname-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="strokes-pos" type="i">
+      <default>1</default>
+    </key>
+    <key name="bushu-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="classic-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="deroo-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="skip-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="fourc-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="hindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="nindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="vindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="iindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="inindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="mnindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="mpindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="eindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="kindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="lindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="oindex-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="cref-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="missc-pos" type="i">
+      <default>0</default>
+    </key>
+    <key name="kanji-font" type="s">
+      <default>'KanjiStrokeOrders 52'</default>
+    </key>
+    <key name="kanji-color" type="s">
+      <default>'rgb(255,0,0)'</default>
+    </key>
+    <key name="kanji-result-font" type="s">
+      <default> 'Monospace 18'</default>
+    </key>
+    <key name="separator" type="s">
+      <default>' ・ '</default>
+    </key>
+    <key name="kanjidicfile" type="s">
+      <default>''</default>
+      <summary>Kanjidic dictionary file in UTF8 format</summary>
+      <description>Kanjidic dictionary file</description>
+    </key>
+  </schema>
+</schemalist>

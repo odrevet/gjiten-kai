@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-14 11:02+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/gjitenkai/ui/kanjidic.ui:514
+msgid "+/-"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:325
+msgid "About"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:200
+msgid "Appearance"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:598
+msgid "Clear"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:224
+msgid "Dictionary"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:161
+msgid "Items"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:172
+msgid "Kanji Candidates"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:138
+msgid "Kanji font"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:542
+msgid "Keys"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:363
+msgid "OK"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:294
+msgid "Preferences"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:271
+msgid "Quit"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:465
+msgid "Radicals"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:567
+msgid "Search"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:150
+msgid "Separator"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:584
+msgid "Show"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:451
+msgid "Strokes"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:284
+msgid "_Edit"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:261
+msgid "_File"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:315
+msgid "_Help"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:307
+msgid "_View"
+msgstr ""

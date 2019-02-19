@@ -1,0 +1,1 @@
+gsettings list-keys gjitenkai

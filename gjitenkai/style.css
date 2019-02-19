@@ -1,0 +1,13 @@
+#radical{
+    color: black;
+    background: grey;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+#radical_active{
+    color: red;
+    background: yellow;
+    font-size: 1.2em;
+    border-radius: 10px;
+}

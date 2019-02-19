@@ -1,0 +1,12 @@
+!define VERSION "0.1.1"
+!define APP_VERSION "0.1.1"
+!define APP_NAME "GJitenKai"
+!define EXE_NAME "@CMAKE_SOURCE_DIR@/bin/gjitenkai.exe"
+!define README_FILE "@CMAKE_SOURCE_DIR@/README.md"
+!define LICENSE_FILE "@CMAKE_SOURCE_DIR@/LICENSE"
+!define MUI_ICON "pixmaps\@APP_LOW_NAME@.ico"
+!define MUI_UNICON "pixmaps\@APP_LOW_NAME@.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "@CMAKE_SOURCE_DIR@/pixmaps/gjitenkai.png"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "@CMAKE_SOURCE_DIR@/pixmaps/gjitenkai.png"
+!insertmacro MUI_PAGE_WELCOME
+!insertmacro MUI_PAGE_LICENSE "/e/builds/gjitenkai/LICENSE"

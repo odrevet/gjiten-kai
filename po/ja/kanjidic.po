@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Moeko DREVET <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-14 11:02+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Moeko DREVET <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/gjitenkai/ui/kanjidic.ui:514
+msgid "+/-"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:325
+msgid "About"
+msgstr "情報"
+
+#: share/gjitenkai/ui/kanjidic.ui:200
+msgid "Appearance"
+msgstr "デザイン"
+
+#: share/gjitenkai/ui/kanjidic.ui:598
+msgid "Clear"
+msgstr "消去"
+
+#: share/gjitenkai/ui/kanjidic.ui:224
+msgid "Dictionary"
+msgstr "辞書"
+
+#: share/gjitenkai/ui/kanjidic.ui:161
+msgid "Items"
+msgstr "アイテム"
+
+#: share/gjitenkai/ui/kanjidic.ui:172
+msgid "Kanji Candidates"
+msgstr "検索結果"
+
+#: share/gjitenkai/ui/kanjidic.ui:138
+msgid "Kanji font"
+msgstr "漢字のフォント"
+
+#: share/gjitenkai/ui/kanjidic.ui:542
+msgid "Keys"
+msgstr "キー"
+
+#: share/gjitenkai/ui/kanjidic.ui:363
+msgid "OK"
+msgstr ""
+
+#: share/gjitenkai/ui/kanjidic.ui:294
+msgid "Preferences"
+msgstr "設定"
+
+#: share/gjitenkai/ui/kanjidic.ui:271
+msgid "Quit"
+msgstr "終了"
+
+#: share/gjitenkai/ui/kanjidic.ui:465
+msgid "Radicals"
+msgstr "部首"
+
+#: share/gjitenkai/ui/kanjidic.ui:567
+msgid "Search"
+msgstr "検索"
+
+#: share/gjitenkai/ui/kanjidic.ui:150
+msgid "Separator"
+msgstr "区分け"
+
+#: share/gjitenkai/ui/kanjidic.ui:584
+msgid "Show"
+msgstr "部首（全て）"
+
+#: share/gjitenkai/ui/kanjidic.ui:451
+msgid "Strokes"
+msgstr "画数"
+
+#: share/gjitenkai/ui/kanjidic.ui:284
+msgid "_Edit"
+msgstr "編集"
+
+#: share/gjitenkai/ui/kanjidic.ui:261
+msgid "_File"
+msgstr "ファイル"
+
+#: share/gjitenkai/ui/kanjidic.ui:315
+msgid "_Help"
+msgstr "ヘルプ"
+
+#: share/gjitenkai/ui/kanjidic.ui:307
+msgid "_View"
+msgstr "画面"

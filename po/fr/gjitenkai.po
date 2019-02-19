@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-19 10:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/gjitenkai/gjitenkai.glade:202
+msgid "Clear"
+msgstr "Effacer"
+
+#: share/gjitenkai/gjitenkai.glade:10
+msgid ""
+"GjitenKai uses EDICT, KANJIDIC and RADKFILE. \n"
+"Copyright Creative Commons Attribution-ShareAlike Licence (V3.0)\n"
+"See http://www.edrdg.org/edrdg/licence.html "
+msgstr ""
+"GjitenKai utilise EDICT, KANJIDIC and RADKFILE. \n"
+"Copyright Creative Commons Attribution-ShareAlike Licence (V3.0)\n"
+"See http://www.edrdg.org/edrdg/licence.html "
+
+#: share/gjitenkai/gjitenkai.glade:192
+msgid "History"
+msgstr "Historique"
+
+#: share/gjitenkai/gjitenkai.glade:146
+msgid "Kanjidic"
+msgstr ""
+
+#: share/gjitenkai/gjitenkai.glade:176
+msgid "Notebook"
+msgstr "Calpin"
+
+#: share/gjitenkai/gjitenkai.glade:273
+msgid "OK"
+msgstr ""
+
+#: share/gjitenkai/gjitenkai.glade:163
+msgid "Paned"
+msgstr "Baie vitrée"
+
+#: share/gjitenkai/gjitenkai.glade:112
+msgid "Preferences"
+msgstr "Préférences"
+
+#: share/gjitenkai/gjitenkai.glade:135
+msgid "Worddic"
+msgstr ""
+
+#: share/gjitenkai/gjitenkai.glade:102
+msgid "_Edit"
+msgstr "_Edition"
+
+#: share/gjitenkai/gjitenkai.glade:78
+msgid "_File"
+msgstr "_Fichier"
+
+#: share/gjitenkai/gjitenkai.glade:221
+msgid "_Help"
+msgstr "_Aide"
+
+#: share/gjitenkai/gjitenkai.glade:125
+msgid "_View"
+msgstr "_Vue"

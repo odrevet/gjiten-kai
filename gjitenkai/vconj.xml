@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+This file has been generated from the vdf file
+
+V C O N J - control file for verb and adjective deinflection
+
+the following section sets up the labels which are used for the
+various inflections. These are displayed by the program.
+The initial labels can be edited by the user.
+
+-->
+
+<!DOCTYPE inflections [
+<!ENTITY PLAIN_NEG_NP      "plain, negative, nonpast">
+<!ENTITY POL_NP            "polite, non-past">
+<!ENTITY COND              "conditional">
+<!ENTITY VOL               "volitional">
+<!ENTITY TE                "te-form">
+<!ENTITY PLAIN_PAST        "plain, past">
+<!ENTITY PLAIN_NEG_P       "plain, negative, past">
+<!ENTITY PASSIVE           "passive">
+<!ENTITY CAUSATIVE         "causative">                   <!--  8 -->
+<!ENTITY POT_OR_IMP        "potential or imperative">     <!--  9 -->
+<!ENTITY IMP               "imperative">                  <!-- 10 -->
+<!ENTITY POL_PAST          "polite, past">                <!-- 11 -->
+<!ENTITY POL_NEG_NP        "polite, negative, non-past">  <!-- 12 -->
+<!ENTITY POL_NEG_P         "polite, negative, past">      <!-- 13 -->
+<!ENTITY ADJ_TO_ADV        "adj. -> adverb">
+<!ENTITY POL               "polite">
+<!ENTITY POL_VOL           "polite, volitional">
+<!ENTITY PASSIVE_OR_POT    "passive or potential">
+<!ENTITY PASSIVE_OR_POTGR2 "passive (or potential if Grp 2)">
+<!ENTITY ADJ_NEG           "adj., negative">
+<!ENTITY ADJ_NEG_P         "adj., negative, past">
+<!ENTITY ADJ_P             "adj., past">                 <!-- 23 16 -->
+<!ENTITY PLAIN_V           "plain verb">                 <!-- 24 -->
+<!ENTITY POL_TE            "polite, te-form">            <!-- 25 -->
+]>
+
+<inflections>
+  <entry><conj>た</conj><df>る</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>て</conj><df>る</df><label type="4">&TE;</label></entry>
+  <entry><conj>かない</conj><df>く</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>かなか</conj><df>く</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>きます</conj><df>く</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>きました</conj><df>く</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>きまして</conj><df>く</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>きませんでした</conj><df>く</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>きません</conj><df>く</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>きましょう</conj><df>く</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>けば</conj><df>く</df><label type="2">&COND;</label></entry>
+  <entry><conj>こう</conj><df>く</df><label type="3">&VOL;</label></entry>
+  <entry><conj>いて</conj><df>く</df><label type="4">&TE;</label></entry>
+  <entry><conj>って</conj><df>く</df><label type="4">&TE;</label></entry>
+  <entry><conj>いた</conj><df>く</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>った</conj><df>く</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>かれ</conj><df>く</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>かせ</conj><df>く</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>け</conj><df>く</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>さない</conj><df>す</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>さなか</conj><df>す</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>します</conj><df>す</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>しました</conj><df>す</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>しまして</conj><df>す</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>しませんでした</conj><df>す</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>しません</conj><df>す</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>しましょう</conj><df>す</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>せば</conj><df>す</df><label type="2">&COND;</label></entry>
+  <entry><conj>そう</conj><df>す</df><label type="3">&VOL;</label></entry>
+  <entry><conj>して</conj><df>す</df><label type="4">&TE;</label></entry>
+  <entry><conj>した</conj><df>す</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>され</conj><df>す</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>させ</conj><df>す</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>せ</conj><df>す</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>たない</conj><df>つ</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>たなか</conj><df>つ</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>ちます</conj><df>つ</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>ちました</conj><df>つ</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>ちまして</conj><df>つ</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>ちませんでした</conj><df>つ</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>ちません</conj><df>つ</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>ちましょう</conj><df>つ</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>てば</conj><df>つ</df><label type="2">&COND;</label></entry>
+  <entry><conj>とう</conj><df>つ</df><label type="3">&VOL;</label></entry>
+  <entry><conj>って</conj><df>つ</df><label type="4">&TE;</label></entry>
+  <entry><conj>った</conj><df>つ</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>たれ</conj><df>つ</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>たせ</conj><df>つ</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>て</conj><df>つ</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>なない</conj><df>ぬ</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>ななか</conj><df>ぬ</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>にます</conj><df>ぬ</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>にました</conj><df>ぬ</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>にまして</conj><df>ぬ</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>にませんでした</conj><df>ぬ</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>にません</conj><df>ぬ</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>にましょう</conj><df>に</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>ねば</conj><df>ぬ</df><label type="2">&COND;</label></entry>
+  <entry><conj>のう</conj><df>ぬ</df><label type="3">&VOL;</label></entry>
+  <entry><conj>んで</conj><df>ぬ</df><label type="4">&TE;</label></entry>
+  <entry><conj>んだ</conj><df>ぬ</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>なれ</conj><df>ぬ</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>なせ</conj><df>ぬ</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>ね</conj><df>ぬ</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>まない</conj><df>む</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>まなか</conj><df>む</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>みます</conj><df>む</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>みました</conj><df>む</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>みまして</conj><df>む</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>みませんでした</conj><df>む</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>みません</conj><df>む</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>みましょう</conj><df>む</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>めば</conj><df>む</df><label type="2">&COND;</label></entry>
+  <entry><conj>もう</conj><df>む</df><label type="3">&VOL;</label></entry>
+  <entry><conj>んで</conj><df>む</df><label type="4">&TE;</label></entry>
+  <entry><conj>んだ</conj><df>む</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>まれ</conj><df>む</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>ませ</conj><df>む</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>め</conj><df>む</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>らない</conj><df>る</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>らなか</conj><df>る</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>ります</conj><df>る</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>りました</conj><df>る</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>りまして</conj><df>る</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>りませんでした</conj><df>る</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>りません</conj><df>る</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>りましょう</conj><df>る</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>れば</conj><df>る</df><label type="2">&COND;</label></entry>
+  <entry><conj>ろう</conj><df>る</df><label type="3">&VOL;</label></entry>
+  <entry><conj>って</conj><df>る</df><label type="4">&TE;</label></entry>
+  <entry><conj>った</conj><df>る</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>られ</conj><df>る</df><label type="20">&PASSIVE_OR_POTGR2;</label></entry>
+  <entry><conj>らせ</conj><df>る</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>わない</conj><df>う</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>わなか</conj><df>う</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>います</conj><df>う</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>いました</conj><df>う</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>いまして</conj><df>う</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>いませんでした</conj><df>う</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>いません</conj><df>う</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>いましょう</conj><df>う</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>えば</conj><df>う</df><label type="2">&COND;</label></entry>
+  <entry><conj>おう</conj><df>う</df><label type="3">&VOL;</label></entry>
+  <entry><conj>って</conj><df>う</df><label type="4">&TE;</label></entry>
+  <entry><conj>った</conj><df>う</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>われ</conj><df>う</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>わせ</conj><df>う</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>え</conj><df>う</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>がない</conj><df>ぐ</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>がなか</conj><df>ぐ</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>ぎます</conj><df>ぐ</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>ぎました</conj><df>ぐ</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>ぎまして</conj><df>ぐ</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>ぎませんでした</conj><df>ぐ</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>ぎません</conj><df>ぐ</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>ぎましょう</conj><df>ぐ</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>げば</conj><df>ぐ</df><label type="2">&COND;</label></entry>
+  <entry><conj>ごう</conj><df>ぐ</df><label type="3">&VOL;</label></entry>
+  <entry><conj>いで</conj><df>ぐ</df><label type="4">&TE;</label></entry>
+  <entry><conj>いだ</conj><df>ぐ</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>がれ</conj><df>ぐ</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>がせ</conj><df>ぐ</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>げ</conj><df>ぐ</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>ばない</conj><df>ぶ</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>ばなか</conj><df>ぶ</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>びます</conj><df>ぶ</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>びました</conj><df>ぶ</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>びまして</conj><df>ぶ</df><label type="25">&POL_TE;</label></entry>
+  <entry><conj>びませんでした</conj><df>ぶ</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>びません</conj><df>ぶ</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>びましょう</conj><df>ぶ</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>べば</conj><df>ぶ</df><label type="2">&COND;</label></entry>
+  <entry><conj>ぼう</conj><df>ぶ</df><label type="3">&VOL;</label></entry>
+  <entry><conj>んで</conj><df>ぶ</df><label type="4">&TE;</label></entry>
+  <entry><conj>んだ</conj><df>ぶ</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>ばれ</conj><df>ぶ</df><label type="7">&PASSIVE;</label></entry>
+  <entry><conj>ばせ</conj><df>ぶ</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>べ</conj><df>ぶ</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>ない</conj><df>る</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>なか</conj><df>る</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>ます</conj><df>る</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>ました</conj><df>る</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>ませんでした</conj><df>る</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>ません</conj><df>る</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>ましょう</conj><df>る</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>れば</conj><df>る</df><label type="2">&COND;</label></entry>
+  <entry><conj>よう</conj><df>る</df><label type="3">&VOL;</label></entry>
+  <entry><conj>て</conj><df>る</df><label type="4">&TE;</label></entry>
+  <entry><conj>た</conj><df>る</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>られ</conj><df>る</df><label type="20">&PASSIVE_OR_POTGR2;</label></entry>
+  <entry><conj>させ</conj><df>る</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>ろ</conj><df>る</df><label type="10">&IMP;</label></entry>
+  <entry><conj>らま</conj><df>る</df><label type="17">&POL;</label></entry>
+  <entry><conj>くなか</conj><df>い</df><label type="22">&ADJ_NEG_P;</label></entry>
+  <entry><conj>くな</conj><df>い</df><label type="21">&PASSIVE_OR_POTGR2;</label></entry>
+  <entry><conj>かった</conj><df>い</df><label type="23">&ADJ_P;</label></entry>
+  <entry><conj>く</conj><df>い</df><label type="15">&ADJ_TO_ADV;</label></entry>
+  <entry><conj>しか</conj><df>しい</df><label type="16">&ADJ_P;</label></entry>
+  <entry><conj>けます</conj><df>ける</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>けました</conj><df>ける</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>けませんでした</conj><df>ける</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>けません</conj><df>ける</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>けましょう</conj><df>ける</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>けない</conj><df>ける</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>けなか</conj><df>ける</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>けれ</conj><df>ける</df><label type="2">&COND;</label></entry>
+  <entry><conj>けよ</conj><df>ける</df><label type="3">&VOL;</label></entry>
+  <entry><conj>けて</conj><df>ける</df><label type="4">&TE;</label></entry>
+  <entry><conj>けた</conj><df>ける</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>けら</conj><df>ける</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>けさ</conj><df>ける</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>けろ</conj><df>ける</df><label type="10">&IMP;</label></entry>
+  <entry><conj>げます</conj><df>げる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>げました</conj><df>げる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>げませんでした</conj><df>げる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>げません</conj><df>げる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>げましょう</conj><df>げる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>げない</conj><df>げる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>げなか</conj><df>げる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>げて</conj><df>げる</df><label type="4">&TE;</label></entry>
+  <entry><conj>げれ</conj><df>げる</df><label type="2">&COND;</label></entry>
+  <entry><conj>げよ</conj><df>げる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>げた</conj><df>げる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>げら</conj><df>げる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>げさ</conj><df>げる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>げろ</conj><df>げる</df><label type="10">&IMP;</label></entry>
+  <entry><conj>べます</conj><df>べる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>べました</conj><df>べる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>べませんでした</conj><df>べる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>べません</conj><df>べる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>べましょう</conj><df>べる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>べない</conj><df>べる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>べなか</conj><df>べる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>べれ</conj><df>べる</df><label type="2">&COND;</label></entry>
+  <entry><conj>べよ</conj><df>べる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>べて</conj><df>べる</df><label type="4">&TE;</label></entry>
+  <entry><conj>べた</conj><df>べる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>べら</conj><df>べる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>べさ</conj><df>べる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>べろ</conj><df>べる</df><label type="10">&IMP;</label></entry>
+  <entry><conj>めます</conj><df>める</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>めました</conj><df>める</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>めませんでした</conj><df>める</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>めません</conj><df>める</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>めましょう</conj><df>める</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>めない</conj><df>める</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>めなか</conj><df>める</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>めれ</conj><df>める</df><label type="2">&COND;</label></entry>
+  <entry><conj>めよ</conj><df>める</df><label type="3">&VOL;</label></entry>
+  <entry><conj>めて</conj><df>める</df><label type="4">&TE;</label></entry>
+  <entry><conj>めた</conj><df>める</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>めら</conj><df>める</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>めさ</conj><df>める</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>めろ</conj><df>める</df><label type="10">&IMP;</label></entry>
+  <entry><conj>えます</conj><df>える</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>えました</conj><df>える</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>えませんでした</conj><df>える</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>えません</conj><df>える</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>えましょう</conj><df>える</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>えない</conj><df>える</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>えなか</conj><df>える</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>えれ</conj><df>える</df><label type="2">&COND;</label></entry>
+  <entry><conj>えよ</conj><df>える</df><label type="3">&VOL;</label></entry>
+  <entry><conj>えて</conj><df>える</df><label type="4">&TE;</label></entry>
+  <entry><conj>えた</conj><df>える</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>えら</conj><df>える</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>えさ</conj><df>える</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>えろ</conj><df>える</df><label type="10">&IMP;</label></entry>
+  <entry><conj>れます</conj><df>れる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>れました</conj><df>れる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>れませんでした</conj><df>れる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>れません</conj><df>れる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>れましょう</conj><df>れる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>れない</conj><df>れる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>れなか</conj><df>れる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>れれ</conj><df>れる</df><label type="2">&COND;</label></entry>
+  <entry><conj>れよ</conj><df>れる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>れて</conj><df>れる</df><label type="4">&TE;</label></entry>
+  <entry><conj>れた</conj><df>れる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>れら</conj><df>れる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>れさ</conj><df>れる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>れろ</conj><df>れる</df><label type="10">&IMP;</label></entry>
+  <entry><conj>れ</conj><df>る</df><label type="9">&POT_OR_IMP;</label></entry>
+  <entry><conj>ねます</conj><df>ねる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>ねました</conj><df>ねる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>ねませんでした</conj><df>ねる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>ねません</conj><df>ねる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>ねましょう</conj><df>ねる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>ねない</conj><df>ねる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>ねなか</conj><df>ねる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>ねれ</conj><df>ねる</df><label type="2">&COND;</label></entry>
+  <entry><conj>ねよ</conj><df>ねる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>ねて</conj><df>ねる</df><label type="4">&TE;</label></entry>
+  <entry><conj>ねた</conj><df>ねる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>ねら</conj><df>ねる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>ねさ</conj><df>ねる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>ねろ</conj><df>ねる</df><label type="10">&IMP;</label></entry>
+  <entry><conj>せます</conj><df>せる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>せました</conj><df>せる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>せませんでした</conj><df>せる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>せません</conj><df>せる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>せましょう</conj><df>せる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>せない</conj><df>せる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>せなか</conj><df>せる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>せれ</conj><df>せる</df><label type="2">&COND;</label></entry>
+  <entry><conj>せよ</conj><df>せる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>せて</conj><df>せる</df><label type="4">&TE;</label></entry>
+  <entry><conj>せた</conj><df>せる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>せら</conj><df>せる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>せさ</conj><df>せる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>せろ</conj><df>せる</df><label type="10">&IMP;</label></entry>
+  <entry><conj>ぜます</conj><df>ぜる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>ぜました</conj><df>ぜる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>ぜませんでした</conj><df>ぜる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>ぜません</conj><df>ぜる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>ぜましょう</conj><df>ぜる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>ぜない</conj><df>ぜる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>ぜなか</conj><df>ぜる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>ぜれ</conj><df>ぜる</df><label type="2">&COND;</label></entry>
+  <entry><conj>ぜよ</conj><df>ぜる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>ぜて</conj><df>ぜる</df><label type="4">&TE;</label></entry>
+  <entry><conj>ぜた</conj><df>ぜる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>ぜら</conj><df>ぜる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>ぜさ</conj><df>ぜる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>ぜろ</conj><df>ぜる</df><label type="10">&IMP;</label></entry>
+  <entry><conj>てます</conj><df>てる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>てました</conj><df>てる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>てませんでした</conj><df>てる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>てません</conj><df>てる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>てましょう</conj><df>てる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>てない</conj><df>てる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>てなか</conj><df>てる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>てれ</conj><df>てる</df><label type="2">&COND;</label></entry>
+  <entry><conj>てよ</conj><df>てる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>てて</conj><df>てる</df><label type="4">&TE;</label></entry>
+  <entry><conj>てた</conj><df>てる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>てら</conj><df>てる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>てさ</conj><df>てる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>てろ</conj><df>てる</df><label type="10">&IMP;</label></entry>
+  <entry><conj>でます</conj><df>でる</df><label type="1">&POL_NP;</label></entry>
+  <entry><conj>でました</conj><df>でる</df><label type="11">&POL_PAST;</label></entry>
+  <entry><conj>でませんでした</conj><df>でる</df><label type="13">&POL_NEG_P;</label></entry>
+  <entry><conj>でません</conj><df>でる</df><label type="12">&POL_NEG_NP;</label></entry>
+  <entry><conj>でましょう</conj><df>でる</df><label type="18">&POL_VOL;</label></entry>
+  <entry><conj>でない</conj><df>でる</df><label type="0">&PLAIN_NEG_NP;</label></entry>
+  <entry><conj>でなか</conj><df>でる</df><label type="6">&PLAIN_NEG_P;</label></entry>
+  <entry><conj>でれ</conj><df>でる</df><label type="2">&COND;</label></entry>
+  <entry><conj>でよ</conj><df>でる</df><label type="3">&VOL;</label></entry>
+  <entry><conj>でて</conj><df>でる</df><label type="4">&TE;</label></entry>
+  <entry><conj>でた</conj><df>でる</df><label type="5">&PLAIN_PAST;</label></entry>
+  <entry><conj>でら</conj><df>でる</df><label type="19">&PASSIVE_OR_POT;</label></entry>
+  <entry><conj>でさ</conj><df>でる</df><label type="8">&CAUSATIVE;</label></entry>
+  <entry><conj>でろ</conj><df>でる</df><label type="10">&IMP;</label></entry>
+</inflections>
