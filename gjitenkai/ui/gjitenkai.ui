@@ -32,7 +32,7 @@ along with GjitenKai グジテン改.  If not, see <http://www.gnu.org/licenses/
     <property name="copyright" translatable="yes">GjitenKai uses EDICT, KANJIDIC and RADKFILE.
 Copyright Creative Commons Attribution-ShareAlike Licence (V3.0)
 See http://www.edrdg.org/edrdg/licence.html </property>
-    <property name="website">http://odrevet.github.io/gjitenkai/</property>
+    <property name="website">https://github.com/odrevet/gjitenkai</property>
     <property name="authors">Drevet Olivier
 Original Gjiten developer Botond Botyanszki </property>
     <property name="logo">../kai.png</property>
