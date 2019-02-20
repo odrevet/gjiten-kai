@@ -35,7 +35,7 @@ https://github.com/odrevet/gjitenkai/wiki/
 
 ## Learn how to search expressions efficiently
 
-By reading the use case located at https://github.com/odrevet/gjitenkai/wiki/Search-expressions
+By reading the use case located at https://github.com/odrevet/gjiten-kai/wiki/Search-Japanese-expressions
 
 # Differences with the Original Gjiten 2.6
 
