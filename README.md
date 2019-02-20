@@ -1,7 +1,7 @@
 ![alt text](https://raw.githubusercontent.com/odrevet/gjitenkai/master/gjitenkai/gjitenkai.png)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Github All Releases](https://img.shields.io/github/downloads/odrevet/gjitenkai/total.svg?style=flat-square)](https://github.com/odrevet/gjitenkai)
+
 
 # Gjiten kai
 
