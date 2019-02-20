@@ -5,7 +5,7 @@
 
 # Gjiten kai
 
-<i>A modern re-implementation of Gjiten, a japanese dictionary</i>
+<i>A modern re-writting of Gjiten, a japanese dictionary</i>
 
 # Goal
 The goal of this rewrite of Gjiten is to have a Gjiten with new features and a
@@ -51,6 +51,6 @@ By reading the use case located at https://github.com/odrevet/gjitenkai/wiki/Sea
 * Download dictionaries 
 
 # Credits
-* Gjiten kai developer (2015 - ...) Olivier Drevet
+* Gjiten kai developer (2015 - current) Olivier Drevet
 * Special Thanks to the Original Gjiten developer (1999 - 2005) Botond Botyanszki 
 * EDICT Dictionary Released under Creative Commons Attribution-ShareAlike Licence (V3.0)
