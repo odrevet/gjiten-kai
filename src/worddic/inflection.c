@@ -113,7 +113,7 @@ GList* search_inflections(GSList *vinfl_list,
                                      tmp_vinfl_struct->infl);
 
     //if the inflection type is from an adj-i, only search for adj-i
-    //if not adji-i, assume it's a verbe
+    //if not adj-i, assume it's a verbe
     enum sense_GI entry_type;
     if(tmp_vinfl_struct->itype == ADJ_TO_ADVERB ||
        tmp_vinfl_struct->itype == ADJ_PAST ||

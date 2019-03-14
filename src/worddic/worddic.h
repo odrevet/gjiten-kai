@@ -46,15 +46,14 @@ extern void init_prefs_window(worddic *worddic);
 
 void worddic_init (worddic * );
 void init_search_menu(worddic *);
+
 /**
-Search for the regex expression in active dictionaries entries.
-if an active dictionary entries are not loaded, they are automatically
-loaded. If a thread currently loading dictionary entries, wait until
-the thread ends.
-Will also do special searches (inflection, katakana/hiragana conversions)
-@return TRUE is one or more expression matched
-FALSE if no match
- */
+   Search for the regex expression in active dictionaries entries.
+   Will also do special searches (inflection, katakana/hiragana conversions)
+   * Load any active and unloaded dictionaries
+   * If a thread currently loading dictionary entries, wait until the thread ends.
+   @return TRUE is one or more expression matched or FALSE if no match
+*/
 gboolean worddic_search(const gchar *search_text, worddic *worddic);
 void print_unit(GtkTextBuffer *textbuffer,
                 gchar *text, unit_style *style);

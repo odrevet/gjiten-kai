@@ -22,11 +22,6 @@
 
 #define VINFL_FILENAME "vconj.xml"
 
-/**
-use a text file (vconj.utf8) which maps the dictionary form of a verb with
-diffent forms (which is called inflection).
-*/
-
 //map the vconj types
 enum conj_type{
   PLAIN_NEGATIVE_NONPAST = 0,
