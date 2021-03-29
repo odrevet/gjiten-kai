@@ -15,8 +15,7 @@ new interface, while keeping the original overall design.
 
 ## Edict 
 To use the worddic (word dictionary) you will need an EDICT dictionary file.
-Get one from the Official EDICT website at 
-http://ftp.monash.edu.au/pub/nihongo/00INDEX.html#dic_fil
+Get one from https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project
 
 Dictionary files can be downloaded directly from Gjitenkai in the ''preference/Download'' menu
 
