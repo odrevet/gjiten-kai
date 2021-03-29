@@ -1,8 +1,6 @@
 #include "kanjidic.h"
 #include "kanji_item.h"
 
-GSList *kanji_item_list = NULL;
-
 gint cmp_name(gconstpointer a,
               gconstpointer b){
   const kanji_item *ki1 = a;

@@ -47,10 +47,7 @@ int main( int argc, char **argv){
   //init gtk
   gtk_init (&argc, &argv);
 
-  SoupSession *session = soup_session_new();
-  gchar *download_location = NULL;
-  cursor_selection = NULL;
-  cursor_default = NULL;
+  session = NULL;
 
   GtkCssProvider *provider;
   GdkDisplay *display;

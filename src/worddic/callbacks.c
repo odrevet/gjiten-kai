@@ -7,12 +7,6 @@
 #include "preferences.h"
 #include "../gjitenkai/dicfile.h"
 
-GdkCursor *cursor_selection;
-GdkCursor *cursor_default;
-
-SoupSession *session;
-gchar *download_location;
-
 /*
  * Update the cursor image if the pointer is above a kanji.
  */
@@ -131,6 +125,8 @@ static void got_chunk (SoupMessage *msg, SoupBuffer *chunk, GtkProgressBar *pbar
    to the box, so user can monitor downloading progress
  */
 G_MODULE_EXPORT void on_button_download_clicked(GtkButton *button, GtkProgressBar *pbar){
+  if(!session)session = soup_session_new();
+
   if(!strcmp(gtk_button_get_label(button), "Cancel")){
     gtk_button_set_label(button, "Download");
     SoupMessage *msg = (SoupMessage*)g_object_get_data(G_OBJECT(button), "msg");
