@@ -17,11 +17,11 @@
 #define SETTINGS_WORDDIC "gjitenkai.worddic"
 #define UI_DEFINITIONS_FILE_WORDDIC "worddic.ui"
 
-GdkCursor *cursor_selection;
-GdkCursor *cursor_default;
+extern GdkCursor *cursor_selection;
+extern GdkCursor *cursor_default;
 
-SoupSession *session;
-const gchar *download_location;
+extern SoupSession *session;
+extern gchar *download_location;
 
 typedef struct worddic_t{
   GtkBuilder *definitions;

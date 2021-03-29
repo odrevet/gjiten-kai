@@ -1,7 +1,9 @@
 #include "radical_window.h"
 
+GSList *button_list;
+
 void radical_list_init(kanjidic *kanjidic){
-  button_list = NULL;
+  GSList *button_list = NULL;
 
   //populate the radical list window
   GtkGrid *grid_radical_list = (GtkGrid*)gtk_builder_get_object(kanjidic->definitions,

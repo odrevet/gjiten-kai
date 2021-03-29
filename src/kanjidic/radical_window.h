@@ -8,7 +8,7 @@
 //radical per row in the radical list window
 #define RADICAL_PER_ROW 18
 
-GSList *button_list;
+extern GSList *button_list;
 
 /**
    declaration of a callback funcion defined in callbacks.c

@@ -1,7 +1,8 @@
 #include "kanji_item.h"
 
 void kanji_item_list_init(){
-
+  GSList * kanji_item_list = NULL;
+  
   kanji_item_list = g_slist_append(kanji_item_list,
 				   kanji_item_load("Radicals", "radical"));
   kanji_item_list = g_slist_append(kanji_item_list,

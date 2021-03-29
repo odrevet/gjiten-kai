@@ -15,7 +15,7 @@ typedef struct kanji_item{
   gboolean active;
 }kanji_item;
 
-GSList *kanji_item_list;
+extern GSList *kanji_item_list;
 
 void kanji_item_list_init();
 
