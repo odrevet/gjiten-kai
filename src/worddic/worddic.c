@@ -125,7 +125,7 @@ void worddic_init (worddic *p_worddic){
   cursor_default = gdk_cursor_new_for_display(display, GDK_XTERM);
 
   //init download location
-  download_location = g_get_user_special_dir(G_USER_DIRECTORY_DOCUMENTS);
+  //gchar *download_location = g_get_user_special_dir(G_USER_DIRECTORY_DOCUMENTS);
 
   if(!p_worddic->conf->dicfile_list){
     GtkDialog *dialog = (GtkDialog*)gtk_builder_get_object(p_worddic->definitions,
