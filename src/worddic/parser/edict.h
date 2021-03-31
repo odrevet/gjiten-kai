@@ -9,6 +9,6 @@
 
 #include "../dicentry.h"
 
-GjitenDicentry* parse_line(const gchar* p_line);
+GjitenDicentry *parse_line(const gchar *p_line);
 
 #endif

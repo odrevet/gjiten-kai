@@ -24,14 +24,15 @@ enum
 /**
    treeview to pass to the thread callback function to update the UI
  */
-typedef struct dic_state_ui_t{
+typedef struct dic_state_ui_t
+{
   GtkCellRendererToggle *cell;
   GtkTreeView *treeview;
   WorddicDicfile *dicfile;
   GtkLabel *label_dic_info;
   GtkTreePath *path;
   worddic *worddic;
-}dic_state_ui;
+} dic_state_ui;
 
 /**
    preference window related functions:

@@ -7,23 +7,22 @@
 #include "../src/worddic/inflection.h"
 #include "../src/worddic/worddic_dicfile.h"
 
-
 #include "print_entry.h"
 
-void results_free(GList *results){
+void results_free(GList *results)
+{
   g_list_free_full(results, (GDestroyNotify)dicresult_free);
-  
 }
 
-int main( int argc, char **argv )
-{    
+int main(int argc, char **argv)
+{
   //create and open dictionary
   WorddicDicfile *dicfile = g_new0(WorddicDicfile, 1);
   dicfile->path = g_strdup(argv[1]);
   worddic_dicfile_open(dicfile);
 
-  gchar * search_expression = argv[2];
-  
+  gchar *search_expression = argv[2];
+
   //parse dictionary
   worddic_dicfile_parse_all(dicfile);
 
@@ -32,15 +31,16 @@ int main( int argc, char **argv )
 
   //init inflection engine
   init_inflection();
-  
-  //search for infections 
+
+  //search for infections
   GList *results = search_inflections(dicfile, search_expression);
-  
+
   //print
   GList *l;
-  for(l=results;l!=NULL;l = l->next){
+  for (l = results; l != NULL; l = l->next)
+  {
     dicresult *result = l->data;
-    
+
     //print matched part and comment
     g_printf("(%s) %s:\n", result->comment, result->match);
     //print the entry
@@ -53,12 +53,12 @@ int main( int argc, char **argv )
   //at the next search, just free the comment and the match
   results_free(results);
   results = NULL;
-  
+
   //free dictionary
   worddic_dicfile_free(dicfile);
 
   //free inflection
   free_inflection();
-  
+
   return 1;
 }

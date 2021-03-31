@@ -3,29 +3,37 @@
 
 #include "../src/worddic/dicentry.h"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
   enum entry_GI itype;
 
   itype = ADJI;
   g_printf("ADJI: %d vs GIALL %d : ", itype, GIALL);
-  if(itype & GIALL)g_printf("OK\n");
-  else g_printf("NOTOK\n");
+  if (itype & GIALL)
+    g_printf("OK\n");
+  else
+    g_printf("NOTOK\n");
 
-  itype = NOUN;  
+  itype = NOUN;
   g_printf("NOUN: %d vs GIALL %d : ", itype, GIALL);
-  if(itype & GIALL)g_printf("OK\n");
-  else g_printf("NOTOK\n");
-  
+  if (itype & GIALL)
+    g_printf("OK\n");
+  else
+    g_printf("NOTOK\n");
+
   itype = V1;
   g_printf("V1: %d vs GIALL %d : ", itype, GIALL);
-  if(itype & GIALL)g_printf("OK\n");
-  else g_printf("NOTOK\n");
+  if (itype & GIALL)
+    g_printf("OK\n");
+  else
+    g_printf("NOTOK\n");
 
   itype = V5;
   g_printf("V5: %d vs GIALL %d : ", itype, GIALL);
-  if(itype & GIALL)g_printf("OK\n");
-  else g_printf("NOTOK\n");
-  
+  if (itype & GIALL)
+    g_printf("OK\n");
+  else
+    g_printf("NOTOK\n");
+
   return 1;
 }

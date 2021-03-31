@@ -4,24 +4,27 @@
 
 #include "../src/worddic/inflection.h"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
   //if any command line argument, do not print the inflection list
   gboolean display = TRUE;
-  if(argc >= 2)display = FALSE;
+  if (argc >= 2)
+    display = FALSE;
 
   //init inflection engine
   init_inflection();
 
-  if(display){
+  if (display)
+  {
     //for all the inflections
     GSList *vinfl_list_browser = NULL;
-    for(vinfl_list_browser = vinfl_list;
-        vinfl_list_browser != NULL;
-        vinfl_list_browser = g_slist_next(vinfl_list_browser)){
+    for (vinfl_list_browser = vinfl_list;
+         vinfl_list_browser != NULL;
+         vinfl_list_browser = g_slist_next(vinfl_list_browser))
+    {
 
-      struct vinfl_struct * tmp_vinfl_struct = NULL;
-      tmp_vinfl_struct = (struct vinfl_struct *) vinfl_list_browser->data;
+      struct vinfl_struct *tmp_vinfl_struct = NULL;
+      tmp_vinfl_struct = (struct vinfl_struct *)vinfl_list_browser->data;
 
       g_printf("%s %s -> %s\n",
                tmp_vinfl_struct->type,

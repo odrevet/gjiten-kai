@@ -8,28 +8,30 @@
 #define LINE "１コマ;一コマ;１こま;一こま;一齣;一駒(iK) [ひとコマ(一コマ);ひとこま(一こま,一齣,一駒)] /(n) (1) one scene/one frame/one shot/one exposure/(2) one cell/one panel (comic)/EntL1162000X/"
 
 #define LIMIT 100000
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
   gint i = 0;
   gint max = atoi(argv[1]);
-  if(max > LIMIT){
+  if (max > LIMIT)
+  {
     g_printf("Limited to %d times\n", LIMIT);
-    max=LIMIT;
+    max = LIMIT;
   }
 
   gchar *line = g_strdup(LINE);
-      
-  for(;i<max;i++){
+
+  for (; i < max; i++)
+  {
 
     //allocate memory and parse the line
-    GjitenDicentry* dicentry = parse_line(line);
+    GjitenDicentry *dicentry = parse_line(line);
 
     //free memory
     dicentry_free(dicentry);
-    dicentry=NULL;
+    dicentry = NULL;
   }
 
   g_free(line);
-  
+
   return 1;
 }

@@ -3,12 +3,13 @@
 
 #include "../src/worddic/worddic_dicfile.h"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
-  gchar * path = argv[1];
+  gchar *path = argv[1];
   gint max = atoi(argv[2]);
   gint i;
-  for(i=0;i<max;i++){
+  for (i = 0; i < max; i++)
+  {
     WorddicDicfile *dicfile = g_new0(WorddicDicfile, 1);
     dicfile->path = g_strdup(argv[1]);
     worddic_dicfile_open(dicfile);
@@ -18,9 +19,8 @@ int main( int argc, char **argv )
              dicfile->informations,
              strlen(dicfile->informations),
              dicfile->utf8,
-             dicfile->is_gz
-             );
-    
+             dicfile->is_gz);
+
     worddic_dicfile_close(dicfile);
     worddic_dicfile_free(dicfile);
   }

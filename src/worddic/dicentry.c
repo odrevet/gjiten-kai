@@ -1,6 +1,7 @@
 #include "dicentry.h"
 
-void dicentry_free(GjitenDicentry* dicentry){
+void dicentry_free(GjitenDicentry *dicentry)
+{
   g_slist_free_full(dicentry->jap_definition, g_free);
   dicentry->jap_definition = NULL;
 

@@ -21,14 +21,14 @@
    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
  */
 
-
 #include <stdarg.h>
 #include <gtk/gtk.h>
 #include <stdlib.h>
 
 #include "error.h"
 
-int gjiten_print_error(const char *fmt, ... ) {
+int gjiten_print_error(const char *fmt, ...)
+{
 	GtkWidget *dialog;
 	gint ret = -1;
 	va_list args;
@@ -38,20 +38,22 @@ int gjiten_print_error(const char *fmt, ... ) {
 	pstr = g_strdup_vprintf(fmt, args);
 	va_end(args);
 
-	if (pstr != NULL) {
-	  dialog = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR,  GTK_BUTTONS_OK, "%s", pstr );
+	if (pstr != NULL)
+	{
+		dialog = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, "%s", pstr);
 
 		g_signal_connect_swapped(G_OBJECT(dialog), "response",
-														 G_CALLBACK(gtk_widget_destroy),
-														 G_OBJECT(dialog));
-		
+								 G_CALLBACK(gtk_widget_destroy),
+								 G_OBJECT(dialog));
+
 		gtk_widget_show_all(dialog);
-	  g_free(pstr);
+		g_free(pstr);
 	}
 	return ret;
 }
 
-void gjiten_print_error_and_wait(const char *fmt, ... ) {
+void gjiten_print_error_and_wait(const char *fmt, ...)
+{
 	GtkWidget *dialog;
 	va_list args;
 	gchar *pstr;
@@ -59,17 +61,19 @@ void gjiten_print_error_and_wait(const char *fmt, ... ) {
 	va_start(args, fmt);
 	pstr = g_strdup_vprintf(fmt, args);
 	va_end(args);
- 
-	if (pstr != NULL) {
-	  dialog = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR,  GTK_BUTTONS_OK, "%s", pstr );
+
+	if (pstr != NULL)
+	{
+		dialog = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, "%s", pstr);
 
 		gtk_dialog_run(GTK_DIALOG(dialog));
 		gtk_widget_destroy(dialog);
-	  g_free(pstr);
+		g_free(pstr);
 	}
 }
 
-gboolean gjiten_print_question(const char *fmt, ... ) {
+gboolean gjiten_print_question(const char *fmt, ...)
+{
 	GtkWidget *dialog;
 	gint retval = GTK_RESPONSE_REJECT;
 
@@ -79,20 +83,24 @@ gboolean gjiten_print_question(const char *fmt, ... ) {
 	va_start(args, fmt);
 	pstr = g_strdup_vprintf(fmt, args);
 	va_end(args);
- 
-	if (pstr != NULL) {
-	  dialog = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_QUESTION, GTK_BUTTONS_YES_NO, "%s", pstr);
+
+	if (pstr != NULL)
+	{
+		dialog = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_QUESTION, GTK_BUTTONS_YES_NO, "%s", pstr);
 
 		retval = gtk_dialog_run(GTK_DIALOG(dialog));
 		gtk_widget_destroy(dialog);
-	  g_free(pstr);
+		g_free(pstr);
 	}
 
-	if (retval == GTK_RESPONSE_YES) return TRUE;
-	else return FALSE;
+	if (retval == GTK_RESPONSE_YES)
+		return TRUE;
+	else
+		return FALSE;
 }
 
-void gjiten_abort_with_msg(const char *fmt, ... ) {
+void gjiten_abort_with_msg(const char *fmt, ...)
+{
 	va_list args;
 	gchar *pstr;
 
@@ -101,6 +109,5 @@ void gjiten_abort_with_msg(const char *fmt, ... ) {
 	va_end(args);
 
 	gjiten_print_error_and_wait(pstr);
-  exit(1);
+	exit(1);
 }
-

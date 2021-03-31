@@ -23,7 +23,8 @@
 #define VINFL_FILENAME "vconj.xml"
 
 //map the vconj types
-enum conj_type{
+enum conj_type
+{
   PLAIN_NEGATIVE_NONPAST = 0,
   POLITE_NONPAST,
   CONDITIONAL,
@@ -52,18 +53,18 @@ enum conj_type{
   POLITE_TEFORM
 };
 
-
-struct vinfl_struct {
+struct vinfl_struct
+{
   gchar *conj;
   gchar *infl;
   gchar *type;
   enum conj_type itype;
 };
 
-GSList* init_inflection();
+GSList *init_inflection();
 
-GList* search_inflections(GSList *vinfl_list,
-			  WorddicDicfile *dicfile,
+GList *search_inflections(GSList *vinfl_list,
+                          WorddicDicfile *dicfile,
                           const gchar *srchstrg);
 void free_vinfl(struct vinfl_struct *vinfl);
 

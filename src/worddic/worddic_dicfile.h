@@ -18,32 +18,35 @@
 #include "parser/jmnedict.h"
 #include "../gjitenkai/dicfile.h"
 
-enum dicfile_search_criteria{
-  EXACT_MATCH = 1,   //jp latin (whole expression)
-  START_WITH_MATCH,  //jp
-  END_WITH_MATCH,    //jp
-  ANY_MATCH,         //jp latin (any)
-  WORD_MATCH 	     //latin (whole word)
+enum dicfile_search_criteria
+{
+  EXACT_MATCH = 1,  //jp latin (whole expression)
+  START_WITH_MATCH, //jp
+  END_WITH_MATCH,   //jp
+  ANY_MATCH,        //jp latin (any)
+  WORD_MATCH        //latin (whole word)
 };
 
-typedef struct search_expression_t{
+typedef struct search_expression_t
+{
   const gchar *search_text;
-  enum  dicfile_search_criteria search_criteria_jp;
-  enum  dicfile_search_criteria search_criteria_lat;
-  GSList *langs;       //match only for given lang code
-}search_expression;
+  enum dicfile_search_criteria search_criteria_jp;
+  enum dicfile_search_criteria search_criteria_lat;
+  GSList *langs; //match only for given lang code
+} search_expression;
 
-typedef struct _WorddicDicfile {
-  gchar *path;         //path of the dictionary file
-  gchar *name;         //user defined name
-  gboolean is_active;  //search will be performed only on active dictionaries
-  GSList *entries;     //list of dicentry
+typedef struct _WorddicDicfile
+{
+  gchar *path;        //path of the dictionary file
+  gchar *name;        //user defined name
+  gboolean is_active; //search will be performed only on active dictionaries
+  GSList *entries;    //list of dicentry
 
-  gchar *path_tmp;         //path of the dictionary file (uncompressed)
+  gchar *path_tmp; //path of the dictionary file (uncompressed)
 
   //set to false if cannot be loaded (magic sequance is not found, XML parse error, ...)
   gboolean is_valid;
-  gboolean loaded;     //indicate to thread that loaded has finish
+  gboolean loaded; //indicate to thread that loaded has finish
 
   //tells if the dictionary file is utf8 encoded
   gboolean utf8;
@@ -54,10 +57,10 @@ typedef struct _WorddicDicfile {
   gchar *type;
   gchar *copyright;
   gchar *creation_date;
-}WorddicDicfile;
+} WorddicDicfile;
 
 gboolean worddic_dicfile_open_edict(WorddicDicfile *dicfile, FILE *fp);
-gboolean worddic_dicfile_open(WorddicDicfile *dicfile);   //used in a thread (must have only one parameter)
+gboolean worddic_dicfile_open(WorddicDicfile *dicfile); //used in a thread (must have only one parameter)
 gboolean worddic_dicfile_parse_next_line(WorddicDicfile *dicfile, FILE *fp);
 gboolean worddic_dicfile_have_entry(WorddicDicfile *dicfile);
 /**
@@ -69,18 +72,20 @@ gboolean worddic_dicfile_have_entry(WorddicDicfile *dicfile);
    @Return the result list.
 */
 static inline GList *add_match(GMatchInfo *match_info,
-			       gchar *comment,
-			       GjitenDicentry* dicentry,
-			       GList *results){
+                               gchar *comment,
+                               GjitenDicentry *dicentry,
+                               GList *results)
+{
   //fetch the matched string
-  gchar *word = g_match_info_fetch (match_info, 0);
+  gchar *word = g_match_info_fetch(match_info, 0);
 
   //create a new dicresult struct with the entry and the match
   //when freeing the result, do not free the entry
   dicresult *p_dicresult = g_new0(dicresult, 1);
   p_dicresult->match = word;
   p_dicresult->entry = dicentry;
-  if(comment)p_dicresult->comment = strdup(comment);
+  if (comment)
+    p_dicresult->comment = strdup(comment);
 
   //add the dicentry in the result list
   results = g_list_prepend(results, p_dicresult);

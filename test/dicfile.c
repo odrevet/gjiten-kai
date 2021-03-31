@@ -6,10 +6,12 @@
 #include "../src/worddic/worddic_dicfile.h"
 #include "../src/worddic/dicentry.h"
 
-int main( int argc, char **argv ){
+int main(int argc, char **argv)
+{
   g_printf("load and free a dictionary.\nParameters is 'Dicionary path'\n");
 
-  if(argc < 1){
+  if (argc < 1)
+  {
     printf("Missing first argument: dictionary path\n");
     return 0;
   }

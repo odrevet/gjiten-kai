@@ -5,7 +5,7 @@
 #include "../src/worddic/dicentry.h"
 #include "../src/worddic/gloss.h"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
   FILE *fp;
   fp = fopen(argv[1], "r");
@@ -14,12 +14,13 @@ int main( int argc, char **argv )
   size_t len = 0;
   ssize_t read;
 
-  do{
+  do
+  {
     read = getline(&line, &len, fp);
     g_printf("-->%s<--", line);
-  }while(read != -1);
-  
+  } while (read != -1);
+
   g_free(line);
-  
+
   return 1;
 }

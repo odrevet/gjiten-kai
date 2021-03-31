@@ -4,15 +4,9 @@
 #include "gjitenkai.h"
 #include "../gjitenkai/dicutil.h"
 
-extern gboolean on_gjitenkai_search_results_button_release_event(GtkWidget *text_view,
-                                                                 GdkEventButton *event,
-                                                                 gjitenkai *gjitenkai);
-extern void on_search_expression_activate(GtkEntry *entry,
-                                          worddic *worddic);
-
-extern void on_gjitenkai_search_expression_activate(GtkEntry *entry,
-                                                    gjitenkai *gjitenkai);
-
+extern gboolean on_gjitenkai_search_results_button_release_event(GtkWidget *text_view, GdkEventButton *event, gjitenkai *gjitenkai);
+extern void on_search_expression_activate(GtkEntry *entry, worddic *worddic);
+extern void on_gjitenkai_search_expression_activate(GtkEntry *entry, gjitenkai *gjitenkai);
 extern void on_button_download_clicked(GtkButton *button, worddic *p_worddic);
 
 GError *error = 0;

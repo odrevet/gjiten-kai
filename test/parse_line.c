@@ -9,15 +9,16 @@
 
 #define LINE "１コマ;一コマ;１こま;一こま;一齣;一駒(iK) [ひとコマ(一コマ);ひとこま(一こま,一齣,一駒)] /(n) (1) one scene/one frame/one shot/one exposure/(2) one cell/one panel (comic)/EntL1162000X/"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
   gchar *line = g_strdup(LINE);
   g_printf("Parsing %s\n\n", line);
 
-  GjitenDicentry* entry = parse_line(line);
+  GjitenDicentry *entry = parse_line(line);
 
   //check is line was altered
-  if(strcmp(line, LINE)){
+  if (strcmp(line, LINE))
+  {
     g_printf("WARNING: the line was modified !\nwas\n%s\nis%s\n\n", LINE, line);
   }
 

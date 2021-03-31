@@ -19,15 +19,15 @@
 #include "../gjitenkai/dicfile.h"
 #include "../gjitenkai/dicutil.h"
 
-struct _KanjidicConfig {
+struct _KanjidicConfig
+{
   struct _GjitenDicfile *kanjidic;
 
-  gchar *kanji_font;          //kanji to display' style
+  gchar *kanji_font; //kanji to display' style
   GdkRGBA *kanji_color;
 
-  const gchar *separator;           //separator between entry (katakana & hiragana)
-  gchar *kanji_result_font;   //font for the candidats
-
+  const gchar *separator;   //separator between entry (katakana & hiragana)
+  gchar *kanji_result_font; //font for the candidats
 };
 
 typedef struct _KanjidicConfig KanjidicConfig;

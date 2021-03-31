@@ -3,13 +3,15 @@
 
 #include "../src/common/dicutil.h"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
-  gchar * jp = "。";
+  gchar *jp = "。";
   gchar *lat = ideographical_full_stop_2_full_stop(jp);
   g_printf("%s -> %s\n", jp, lat);
-  if(!g_strcmp0(jp, lat)){g_printf("warning: unmodified result\n");}
+  if (!g_strcmp0(jp, lat))
+  {
+    g_printf("warning: unmodified result\n");
+  }
   g_free(lat);
   return 1;
 }
-

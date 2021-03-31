@@ -17,7 +17,7 @@
 
 gchar *get_EOL(gchar *ptr, gchar *end_ptr);
 int get_word(char *dest, const char *src, int size, int pos);
-void to_utf8(gunichar c, char* utf8_c);
+void to_utf8(gunichar c, char *utf8_c);
 
 gchar *regex_full_to_half(const gchar *str);
 gchar *hira_to_kata(const gchar *hirastr);
@@ -41,7 +41,7 @@ gboolean hasKatakanaString(const gchar *strg);
 gboolean detect_japanese(const gchar *srchstrg);
 
 #ifdef MINGW
-char* strtok_r(char *str, const char *delim, char **nextp);
+char *strtok_r(char *str, const char *delim, char **nextp);
 size_t getline(char **lineptr, size_t *n, FILE *stream);
 #endif
 
@@ -53,6 +53,6 @@ size_t getline(char **lineptr, size_t *n, FILE *stream);
 
    The result is dynamically allocated and should be freed
  */
-gchar* get_file(const gchar* const* dirs, const gchar* filename);
+gchar *get_file(const gchar *const *dirs, const gchar *filename);
 
 #endif

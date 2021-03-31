@@ -1,46 +1,54 @@
 #include "inflection.h"
 
-GSList *init_inflection() {
+GSList *init_inflection()
+{
   GSList *vinfl_list = NULL;
-  const gchar * const * dirs = g_get_system_data_dirs();
+  const gchar *const *dirs = g_get_system_data_dirs();
   gchar *rest = g_strjoin(G_DIR_SEPARATOR_S, PROJECT_NAME, VINFL_FILENAME, NULL);
-  gchar* path = get_file(dirs, rest);
+  gchar *path = get_file(dirs, rest);
   g_free(rest);
 
   xmlDocPtr doc = xmlParseFile(path);
   xmlNodePtr cur;
 
-  if (doc == NULL ) {
-    fprintf(stderr,"Document not parsed successfully. \n");
+  if (doc == NULL)
+  {
+    fprintf(stderr, "Document not parsed successfully. \n");
     return NULL;
   }
   cur = xmlDocGetRootElement(doc);
 
-  if (xmlStrcmp(cur->name, (const xmlChar *) "inflections")) {
-    fprintf(stderr,"document of the wrong type, root node != inflections");
+  if (xmlStrcmp(cur->name, (const xmlChar *)"inflections"))
+  {
+    fprintf(stderr, "document of the wrong type, root node != inflections");
     xmlFreeDoc(doc);
     return NULL;
   }
 
   cur = cur->xmlChildrenNode;
-  while (cur != NULL) {
-    if ((!xmlStrcmp(cur->name, (const xmlChar *)"entry"))){
-      struct vinfl_struct *p_vinfl = g_new0 (struct vinfl_struct, 1);
+  while (cur != NULL)
+  {
+    if ((!xmlStrcmp(cur->name, (const xmlChar *)"entry")))
+    {
+      struct vinfl_struct *p_vinfl = g_new0(struct vinfl_struct, 1);
       xmlNodePtr child = cur->xmlChildrenNode;
-      while(child){
-	if (!xmlStrcmp(child->name, (const xmlChar *)"df")){
-	  p_vinfl->infl = (gchar *)xmlNodeGetContent(child);
-	}
-	else if (!xmlStrcmp(child->name, (const xmlChar *)"conj")){
-	  p_vinfl->conj = (gchar *)xmlNodeGetContent(child);
-	}
-	else if (!xmlStrcmp(child->name, (const xmlChar *)"label")){
-	  p_vinfl->itype = atoi((gchar *)xmlGetProp(child, (const xmlChar *)"type"));
-	  p_vinfl->type = (gchar *)xmlNodeGetContent(child);
-	}
+      while (child)
+      {
+        if (!xmlStrcmp(child->name, (const xmlChar *)"df"))
+        {
+          p_vinfl->infl = (gchar *)xmlNodeGetContent(child);
+        }
+        else if (!xmlStrcmp(child->name, (const xmlChar *)"conj"))
+        {
+          p_vinfl->conj = (gchar *)xmlNodeGetContent(child);
+        }
+        else if (!xmlStrcmp(child->name, (const xmlChar *)"label"))
+        {
+          p_vinfl->itype = atoi((gchar *)xmlGetProp(child, (const xmlChar *)"type"));
+          p_vinfl->type = (gchar *)xmlNodeGetContent(child);
+        }
 
-
-	child = child->next;
+        child = child->next;
       }
       vinfl_list = g_slist_prepend(vinfl_list, p_vinfl);
     }
@@ -52,9 +60,10 @@ GSList *init_inflection() {
   return vinfl_list;
 }
 
-GList* search_inflections(GSList *vinfl_list,
-			  WorddicDicfile *dicfile,
-                          const gchar *srchstrg) {
+GList *search_inflections(GSList *vinfl_list,
+                          WorddicDicfile *dicfile,
+                          const gchar *srchstrg)
+{
   //list to return
   GList *results = NULL;
 
@@ -68,15 +77,19 @@ GList* search_inflections(GSList *vinfl_list,
 
   //for all the inflections
   GSList *vinfl_list_browser = NULL;
-  for(vinfl_list_browser = vinfl_list;
-      vinfl_list_browser != NULL;
-      vinfl_list_browser = g_slist_next(vinfl_list_browser)){
+  for (vinfl_list_browser = vinfl_list;
+       vinfl_list_browser != NULL;
+       vinfl_list_browser = g_slist_next(vinfl_list_browser))
+  {
 
-    struct vinfl_struct * tmp_vinfl_struct = NULL;
-    tmp_vinfl_struct = (struct vinfl_struct *) vinfl_list_browser->data;
+    struct vinfl_struct *tmp_vinfl_struct = NULL;
+    tmp_vinfl_struct = (struct vinfl_struct *)vinfl_list_browser->data;
 
     //if the inflected conjugaison match the end of the string to search
-    if(!g_str_has_suffix(srchstrg, tmp_vinfl_struct->conj)){continue;}
+    if (!g_str_has_suffix(srchstrg, tmp_vinfl_struct->conj))
+    {
+      continue;
+    }
 
     //create a new GString to modify
     GString *deinflected = g_string_new(NULL);
@@ -86,15 +99,17 @@ GList* search_inflections(GSList *vinfl_list,
 
     //replace the inflection by the conjonction
     gint radical_pos = strlen(srchstrg) - strlen(tmp_vinfl_struct->conj);
-    deinflected = g_string_truncate (deinflected, radical_pos);
+    deinflected = g_string_truncate(deinflected, radical_pos);
     deinflected = g_string_append(deinflected, tmp_vinfl_struct->infl);
 
     //check if deinflected was previously searched
-    GSList *l=NULL;
-    for(l=previous_search;
-        l != NULL;
-        l = l->next){
-      if(!strcmp(l->data, deinflected->str)){
+    GSList *l = NULL;
+    for (l = previous_search;
+         l != NULL;
+         l = l->next)
+    {
+      if (!strcmp(l->data, deinflected->str))
+      {
         //free memory
         g_string_free(deinflected, TRUE);
         deinflected = NULL;
@@ -104,7 +119,8 @@ GList* search_inflections(GSList *vinfl_list,
 
     //deinflected has been freed because the same string existed in a previous
     //search. skip this iteration
-    if(!deinflected)continue;
+    if (!deinflected)
+      continue;
 
     //comment that explains which inflection was searched
     gchar *comment = g_strdup_printf("%s %s -> %s",
@@ -115,13 +131,15 @@ GList* search_inflections(GSList *vinfl_list,
     //if the inflection type is from an adj-i, only search for adj-i
     //if not adj-i, assume it's a verbe
     enum sense_GI entry_type;
-    if(tmp_vinfl_struct->itype == ADJ_TO_ADVERB ||
-       tmp_vinfl_struct->itype == ADJ_PAST ||
-       tmp_vinfl_struct->itype == ADJ_NEGATIVE_PAST ||
-       tmp_vinfl_struct->itype == ADJ_PAST_KATTA){
+    if (tmp_vinfl_struct->itype == ADJ_TO_ADVERB ||
+        tmp_vinfl_struct->itype == ADJ_PAST ||
+        tmp_vinfl_struct->itype == ADJ_NEGATIVE_PAST ||
+        tmp_vinfl_struct->itype == ADJ_PAST_KATTA)
+    {
       entry_type = ADJI;
     }
-    else{
+    else
+    {
       entry_type = V1 | V5;
     }
 
@@ -151,7 +169,8 @@ GList* search_inflections(GSList *vinfl_list,
   return results;
 }
 
-void free_vinfl(struct vinfl_struct *vinfl){
+void free_vinfl(struct vinfl_struct *vinfl)
+{
   g_free(vinfl->conj);
   vinfl->conj = NULL;
   g_free(vinfl->infl);

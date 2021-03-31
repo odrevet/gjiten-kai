@@ -6,7 +6,7 @@
 
 #include "print_entry.h"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
   GList *results = NULL;
 
@@ -24,29 +24,30 @@ int main( int argc, char **argv )
 
   //kana
   //search hiragana on katakana
-  if(hasKatakanaString(argv[2])) {
+  if (hasKatakanaString(argv[2]))
+  {
     gchar *hiragana = kata_to_hira(argv[2]);
     search_expr.search_text = hiragana;
 
     results = g_list_concat(results, dicfile_search(dicfile,
-						    &search_expr,
-						    "from katakana",
-						    GIALL,
-						    1)
-			    );
-    g_free(hiragana);  //free memory
+                                                    &search_expr,
+                                                    "from katakana",
+                                                    GIALL,
+                                                    1));
+    g_free(hiragana); //free memory
   }
   ///////////////////////////////////
   //search katakana on hiragana
-  if (hasHiraganaString(argv[2])) {
+  if (hasHiraganaString(argv[2]))
+  {
     gchar *katakana = hira_to_kata(argv[2]);
     search_expr.search_text = katakana;
 
     results = g_list_concat(results, dicfile_search(dicfile,
-						    &search_expr,
-						    "from hiragana",
-						    GIALL,
-						    1));
+                                                    &search_expr,
+                                                    "from hiragana",
+                                                    GIALL,
+                                                    1));
     g_free(katakana); //free memory
   }
 
@@ -54,21 +55,23 @@ int main( int argc, char **argv )
   //standard search
   search_expr.search_text = argv[2];
   results = g_list_concat(results, dicfile_search(dicfile,
-						  &search_expr,
-						  NULL,
-						  GIALL,
-						  1));
+                                                  &search_expr,
+                                                  NULL,
+                                                  GIALL,
+                                                  1));
   //print
-  if(results){
+  if (results)
+  {
     GList *l;
-    for(l=results;l!=NULL;l = l->next){
+    for (l = results; l != NULL; l = l->next)
+    {
       dicresult *result = l->data;
       g_printf("COMMENT %s\n MATCH %s:\n", result->comment, result->match);
       print_entry(result->entry);
     }
   }
-  else printf("No match for %s\n", argv[2]);
-
+  else
+    printf("No match for %s\n", argv[2]);
 
   //free dicresult
   g_list_free_full(results, (GDestroyNotify)dicresult_free);

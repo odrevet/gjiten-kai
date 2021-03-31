@@ -26,21 +26,23 @@
    When saving the configuration
    limit what to save or save all with WSE_ALL
  */
-typedef enum worddic_save_enum{
-  WSE_HIGHLIGHT_COLOR     = 1 << 0,
-  WSE_SEARCH_OPTION       = 1 << 1,
-  WSE_DICFILE             = 1 << 2,
+typedef enum worddic_save_enum
+{
+  WSE_HIGHLIGHT_COLOR = 1 << 0,
+  WSE_SEARCH_OPTION = 1 << 1,
+  WSE_DICFILE = 1 << 2,
   WSE_JAPANESE_DEFINITION = 1 << 3,
-  WSE_JAPANESE_READING    = 1 << 4,
-  WSE_SENSE               = 1 << 5,
-  WSE_NOTES               = 1 << 6,
-  WSE_HISTORY             = 1 << 7,
-  WSE_DARK_THEME          = 1 << 8,
-  WSE_LANG                = 1 << 9,
-  WSE_ALL                 = 11111111
-}worddic_save;
+  WSE_JAPANESE_READING = 1 << 4,
+  WSE_SENSE = 1 << 5,
+  WSE_NOTES = 1 << 6,
+  WSE_HISTORY = 1 << 7,
+  WSE_DARK_THEME = 1 << 8,
+  WSE_LANG = 1 << 9,
+  WSE_ALL = 11111111
+} worddic_save;
 
-typedef struct _WorddicConfig {
+typedef struct _WorddicConfig
+{
   gchar *version;
   GSList *dicfile_list;
   guint maxwordmatches;
@@ -75,7 +77,7 @@ typedef struct _WorddicConfig {
   //List of lang, to be listed in the preference pane.
   //If active, search gloss with the lang code
   GSList *langs;
-}WorddicConfig;
+} WorddicConfig;
 
 void worddic_conf_load_unit_style(GSettings *settings,
                                   unit_style *us,

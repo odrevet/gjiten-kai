@@ -23,7 +23,8 @@ GdkCursor *cursor_default;
 SoupSession *session;
 const gchar *download_location;
 
-typedef struct worddic_t{
+typedef struct worddic_t
+{
   GtkBuilder *definitions;
   GSettings *settings;
   struct _WorddicConfig *conf;
@@ -33,18 +34,17 @@ typedef struct worddic_t{
 
   GThread *thread_load_dic;
 
-  GList *results;          //dicresuls list to partially display
-  gint entries_per_page;   //number of entries to display per 'page'
-  gint current_page;       //current page to be displayed
+  GList *results;        //dicresuls list to partially display
+  gint entries_per_page; //number of entries to display per 'page'
+  gint current_page;     //current page to be displayed
 
-  GSList *vinfl_list;      //list of inflections
+  GSList *vinfl_list; //list of inflections
 
-}worddic;
-
+} worddic;
 
 extern void init_prefs_window(worddic *worddic);
 
-void worddic_init (worddic * );
+void worddic_init(worddic *);
 void init_search_menu(worddic *);
 
 /**
@@ -59,14 +59,14 @@ void print_unit(GtkTextBuffer *textbuffer,
                 gchar *text, unit_style *style);
 void print_entries(GtkTextBuffer *textbuffer, worddic *p_worddic);
 void highlight_result(GtkTextBuffer *textbuffer,
-		      GtkTextTag *highlight,
-		      const gchar *text_to_highlight,
+                      GtkTextTag *highlight,
+                      const gchar *text_to_highlight,
                       GtkTextIter *iter_from);
 
 #if GTK_MAJOR_VERSION >= 3 && GTK_MINOR_VERSION >= 16
-extern void on_worddic_search_results_edge_reached(GtkScrolledWindow* sw,
-						   GtkPositionType pos,
-						   worddic* p_worddic);
+extern void on_worddic_search_results_edge_reached(GtkScrolledWindow *sw,
+                                                   GtkPositionType pos,
+                                                   worddic *p_worddic);
 #endif
 
 void worddic_free(worddic *p_worddic);

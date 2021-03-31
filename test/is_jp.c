@@ -4,17 +4,16 @@
 
 #include "../src/worddic/dicentry.h"
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
-  g_printf("Detect if a string is in japanese\n\
-Argument: the string to test\n");
+  g_printf("Detect if a string is in japanese\n\nArgument: the string to test\n");
 
   char *search_text = argv[1];
-  
-  if(detect_japanese(search_text))
+
+  if (detect_japanese(search_text))
     g_printf("'%s' is in Japanese\n", search_text);
   else
     g_printf("'%s' is not in Japanese\n", search_text);
-  
+
   return 1;
 }

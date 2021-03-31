@@ -4,8 +4,6 @@
 #include <libxml/tree.h>
 #include <libxml/parser.h>
 
-
-
 #include "../dicentry.h"
 
 /**
@@ -13,6 +11,6 @@
    cur must point to an entry
 */
 
-GjitenDicentry* parse_entry_jmdict(xmlDocPtr doc, xmlNodePtr cur);
+GjitenDicentry *parse_entry_jmdict(xmlDocPtr doc, xmlNodePtr cur);
 
 #endif
