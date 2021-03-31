@@ -7,14 +7,13 @@
 #include "../worddic/worddic.h"
 #include "../kanjidic/kanjidic.h"
 
-
 #define UI_DEFINITIONS_FILE_GJITENKAI "gjitenkai.ui"
 
 typedef struct gjitenkai_t
 {
   GtkBuilder *definitions;
-  worddic   *worddic;
-  kanjidic  *kanjidic;
+  worddic *worddic;
+  kanjidic *kanjidic;
 
   //display worddic and kanjidic in a pane or notebook
   GtkNotebook *notebook;
@@ -22,8 +21,7 @@ typedef struct gjitenkai_t
 
 } gjitenkai;
 
-
-void gjitenkai_init (gjitenkai * );
-void gjitenkai_menu_history_append(gjitenkai *p_gjitenkai, const gchar* text);
+void gjitenkai_init(gjitenkai *);
+void gjitenkai_menu_history_append(gjitenkai *p_gjitenkai, const gchar *text);
 
 #endif
