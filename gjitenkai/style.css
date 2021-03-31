@@ -1,11 +1,18 @@
-#radical{
+#radical
+{
     font-size: 1.2em;
-    border-radius: 10px;
 }
 
-#radical_active{
-    color: red;
+#radical:disabled
+{
+    color: lightcoral;
+    background: grey;
+    font-size: 1.2em;
+}
+
+#radical_active
+{
+    color: green;
     background: yellow;
     font-size: 1.2em;
-    border-radius: 10px;
 }
