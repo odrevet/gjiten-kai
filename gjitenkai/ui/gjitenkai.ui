@@ -28,7 +28,7 @@ along with GjitenKai グジテン改.  If not, see <http://www.gnu.org/licenses/
     <property name="can_focus">False</property>
     <property name="type_hint">dialog</property>
     <property name="program_name">Gjiten Kai - グイテン改</property>
-    <property name="version">0.1.2</property>
+    <property name="version">0.1.4</property>
     <property name="copyright" translatable="yes">GjitenKai uses EDICT, KANJIDIC and RADKFILE.
 Copyright Creative Commons Attribution-ShareAlike Licence (V3.0)
 See http://www.edrdg.org/edrdg/licence.html </property>
