@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# ALBANO BATTISTELLA <Albano_battistella@hotmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-14 11:02+0200\n"
+"PO-Revision-Date: 2021-04-07 20:00+0100\n"
+"Last-Translator: Albano Battistella <albano_battistella@hotmail.com>\n"
+"Language-Team: ITALIAN <LL@li.org>\n"
+"Language: It\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/gjitenkai/ui/kanjidic.ui:514
+msgid "+/-"
+msgstr "+/-"
+
+#: share/gjitenkai/ui/kanjidic.ui:325
+msgid "About"
+msgstr "Informazioni"
+
+#: share/gjitenkai/ui/kanjidic.ui:200
+msgid "Appearance"
+msgstr "Aspetto"
+
+#: share/gjitenkai/ui/kanjidic.ui:598
+msgid "Clear"
+msgstr "Pulisci"
+
+#: share/gjitenkai/ui/kanjidic.ui:224
+msgid "Dictionary"
+msgstr "Dizionario"
+
+#: share/gjitenkai/ui/kanjidic.ui:161
+msgid "Items"
+msgstr "Elementi"
+
+#: share/gjitenkai/ui/kanjidic.ui:172
+msgid "Kanji Candidates"
+msgstr "Candidati Kanji"
+
+#: share/gjitenkai/ui/kanjidic.ui:138
+msgid "Kanji font"
+msgstr "Carattere Kanji"
+
+#: share/gjitenkai/ui/kanjidic.ui:542
+msgid "Keys"
+msgstr "Chiavi"
+
+#: share/gjitenkai/ui/kanjidic.ui:363
+msgid "OK"
+msgstr "OK"
+
+#: share/gjitenkai/ui/kanjidic.ui:294
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: share/gjitenkai/ui/kanjidic.ui:271
+msgid "Quit"
+msgstr "Esci"
+
+#: share/gjitenkai/ui/kanjidic.ui:465
+msgid "Radicals"
+msgstr "Radicali"
+
+#: share/gjitenkai/ui/kanjidic.ui:567
+msgid "Search"
+msgstr "Cerca"
+
+#: share/gjitenkai/ui/kanjidic.ui:150
+msgid "Separator"
+msgstr "Separatore"
+
+#: share/gjitenkai/ui/kanjidic.ui:584
+msgid "Show"
+msgstr "Mostra"
+
+#: share/gjitenkai/ui/kanjidic.ui:451
+msgid "Strokes"
+msgstr "Tratti"
+
+#: share/gjitenkai/ui/kanjidic.ui:284
+msgid "_Edit"
+msgstr "_Modifica"
+
+#: share/gjitenkai/ui/kanjidic.ui:261
+msgid "_File"
+msgstr "_File"
+
+#: share/gjitenkai/ui/kanjidic.ui:315
+msgid "_Help"
+msgstr "_Aiuto"
+
+#: share/gjitenkai/ui/kanjidic.ui:307
+msgid "_View"
+msgstr "_Vista"

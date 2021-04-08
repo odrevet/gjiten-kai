@@ -1,0 +1,79 @@
+# ITALIAN TRANSLATION FOR GJITEN-KAI.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# ALBANO BATTISTELLA <albano_battistella@hotmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-14 11:01+0200\n"
+"PO-Revision-Date: 2021-04-07 19:24+0100\n"
+"Last-Translator: Albano Battistella <albano_battistella@hotmail.com>\n"
+"Language-Team: ITALIAN <LL@li.org>\n"
+"Language: It\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/gjitenkai/ui/gjitenkai.ui:229
+msgid "Clear"
+msgstr "Pulisci"
+
+#: share/gjitenkai/ui/gjitenkai.ui:258
+msgid "Download Dictionary"
+msgstr "Scarica Dizionario"
+
+#: share/gjitenkai/ui/gjitenkai.ui:32
+msgid ""
+"GjitenKai uses EDICT, KANJIDIC and RADKFILE.\n"
+"Copyright Creative Commons Attribution-ShareAlike Licence (V3.0)\n"
+"See http://www.edrdg.org/edrdg/licence.html "
+msgstr ""
+"GjitenKai utilizza EDICT, KANJIDIC e RADKFILE.\n"
+"Copyright Creative Commons Attribution-ShareAlike License (V3.0) \ n"
+"Vedi http://www.edrdg.org/edrdg/licence.html"
+
+#: share/gjitenkai/ui/gjitenkai.ui:219
+msgid "History"
+msgstr "Cronologia"
+
+#: share/gjitenkai/ui/gjitenkai.ui:173
+msgid "Kanjidic"
+msgstr "Kanjidic"
+
+#: share/gjitenkai/ui/gjitenkai.ui:203
+msgid "Notebook"
+msgstr "Notebook"
+
+#: share/gjitenkai/ui/gjitenkai.ui:312
+msgid "OK"
+msgstr "Ok"
+
+#: share/gjitenkai/ui/gjitenkai.ui:190
+msgid "Paned"
+msgstr "Finestra a bovindo"
+
+#: share/gjitenkai/ui/gjitenkai.ui:139
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: share/gjitenkai/ui/gjitenkai.ui:162
+msgid "Worddic"
+msgstr ""
+
+#: share/gjitenkai/ui/gjitenkai.ui:129
+msgid "_Edit"
+msgstr "_Modifica"
+
+#: share/gjitenkai/ui/gjitenkai.ui:105
+msgid "_File"
+msgstr "_File"
+
+#: share/gjitenkai/ui/gjitenkai.ui:248
+msgid "_Help"
+msgstr "_Aiuto"
+
+#: share/gjitenkai/ui/gjitenkai.ui:152
+msgid "_View"
+msgstr "_Vista"
