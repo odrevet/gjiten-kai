@@ -32,7 +32,7 @@ The documentation in available in the project Wiki
 
 ## Build from source / create an appimage 
 
-https://github.com/odrevet/gjitenkai/wiki/
+https://github.com/odrevet/gjitenkai/wiki/build
 
 ## Learn how to search japanese expressions
 
