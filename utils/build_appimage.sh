@@ -3,6 +3,6 @@
 
 cmake . -DCMAKE_INSTALL_PREFIX=/usr
 make
-make install DESTDIR=AppDir
+sudo make install DESTDIR=AppDir
 linuxdeploy-x86_64.AppImage --appdir AppDir -e bin/gjitenkai -d gjitenkai.desktop -i gjitenkai/kai.png
 appimagetool-x86_64.AppImage AppDir
