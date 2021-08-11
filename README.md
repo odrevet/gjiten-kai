@@ -28,11 +28,13 @@ for more details.
 
 # Documentation
 
-A documentation in available in the project Wiki 
+The documentation in available in the project Wiki 
+
+## Build from source / create an appimage 
 
 https://github.com/odrevet/gjitenkai/wiki/
 
-## Learn how to search expressions efficiently
+## Learn how to search japanese expressions
 
 By reading the use case located at https://github.com/odrevet/gjiten-kai/wiki/Search-Japanese-expressions
 
