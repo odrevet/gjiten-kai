@@ -1,12 +1,12 @@
 #set the pkg-config variable
 set(PKG_CONFIG_EXECUTABLE pkg-config)
 
-#get the gsettings compiler command name
+#get the gsettings compiler command name from pkg-config
 execute_process (
 COMMAND ${PKG_CONFIG_EXECUTABLE} gio-2.0 --variable glib_compile_schemas  
 OUTPUT_VARIABLE GLIB_COMPLE_SCHEMAS OUTPUT_STRIP_TRAILING_WHITESPACE)
 
-#get the glib prefix directory with pkg-config 
+#get the glib prefix directory from pkg-config
 execute_process (
   COMMAND ${PKG_CONFIG_EXECUTABLE} gio-2.0 --variable prefix
   OUTPUT_VARIABLE GLIB_PREFIX OUTPUT_STRIP_TRAILING_WHITESPACE
@@ -14,7 +14,7 @@ execute_process (
 
 #compile schemas in a directory and put the generated compiled file in
 #the specified targetdir
-function (compile_schemas SCHEMA_DIR TARGET_DIR)
+function (compile_schemas_at SCHEMA_DIR TARGET_DIR)
   execute_process (COMMAND ${GLIB_COMPLE_SCHEMAS} ${SCHEMA_DIR} --targetdir=${TARGET_DIR})
 endfunction()
 

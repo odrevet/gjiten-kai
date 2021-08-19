@@ -33,19 +33,33 @@ file(MAKE_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 if(MINGW)
   include(MinGW.cmake)
 else()
-  # at install, copy the software gschema.xml to the glib gschemas directory
-  install(
-    FILES ${SOURCE_SHARE}/${GLIB_SCHEMADIR}/${PROJECT_NAME}.gschema.xml
-    DESTINATION ${GLIB_PREFIX}/${SCHEMADIR}
-    )
+  if(COMPILE_GSETTINGS_AT)
+    install(
+      CODE
+      "message (STATUS \"Compiling GSettings schemas at ${COMPILE_GSETTINGS_AT}\")"
+      )
+      
+      compile_schemas_at(${COMPILE_GSETTINGS_AT} ${COMPILE_GSETTINGS_AT})
 
-  #at install, compile glib gschemas directory
-  install(
-    CODE
-    "message (STATUS \"Compiling GSettings schemas at ${GLIB_PREFIX}/${SCHEMADIR}\")"
-    )
+      install(
+        FILES ${COMPILE_GSETTINGS_AT}/gschemas.compiled
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/glib-2.0/schemas/)
+  else()
+    # at install, copy gschema.xml to the glib gschemas directory
+    install(
+      FILES ${SOURCE_SHARE}/${GLIB_SCHEMADIR}/${PROJECT_NAME}.gschema.xml
+      DESTINATION ${GLIB_PREFIX}/${SCHEMADIR}
+      )
+  
+    #at install, compile glib gschemas directory
+    install(
+      CODE
+      "message (STATUS \"Compiling GSettings schemas at ${GLIB_PREFIX}/${SCHEMADIR}\")"
+      )
 
-  compile_schemas_install(${GLIB_PREFIX}/${SCHEMADIR})
+    compile_schemas_install(${GLIB_PREFIX}/${SCHEMADIR})
+  endif()
+  
 endif()
 
 #generate config.h from config.h.in
@@ -119,7 +133,7 @@ install(
   ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/ui/)
 
 ## Install locales
-###Fran�ais
+###Francais
 install(
   FILES
   po/fr/${PROJECT_NAME}.mo
