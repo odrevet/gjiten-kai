@@ -44,6 +44,11 @@ else()
       install(
         FILES ${COMPILE_GSETTINGS_AT}/gschemas.compiled
         DESTINATION ${CMAKE_INSTALL_DATADIR}/glib-2.0/schemas/)
+
+      # at install, copy gschema.xml to the glib gschemas directory
+      install(
+        FILES ${COMPILE_GSETTINGS_AT}/${PROJECT_NAME}.gschema.xml
+        DESTINATION ${COMPILE_GSETTINGS_AT})
   else()
     # at install, copy gschema.xml to the glib gschemas directory
     install(
