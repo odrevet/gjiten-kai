@@ -58,7 +58,7 @@ const char *get_content_type(char *path)
 #else
 const char *get_content_type(char *path)
 {
-  GError *error;
+  GError *error = NULL;
   GFile *gf = g_file_new_for_path(path);
   GFileInfo *file_info = g_file_query_info(gf,
                                            "standard::*",
@@ -70,7 +70,7 @@ const char *get_content_type(char *path)
   if (!file_info)
   {
     gjiten_print_error(error->message);
-    printf(error->message);
+    printf("%s\n", error->message);
     return NULL;
   }
 
