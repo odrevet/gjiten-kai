@@ -34,6 +34,21 @@ The documentation in available in the project Wiki
 
 https://github.com/odrevet/gjitenkai/wiki/build
 
+## Build using docker 
+
+```sh
+docker build -t gjitenkai-build .
+docker run --rm -v "$(pwd)/bin:/out" gjitenkai-build
+```
+## Run
+
+To run without having to install in the system, use the `run.sh` wrapper
+
+```sh
+glib-compile-schemas share/glib-2.0/schemas/
+bash run.sh
+```
+
 ## Learn how to search japanese expressions
 
 By reading the use case located at https://github.com/odrevet/gjiten-kai/wiki/Search-Japanese-expressions
