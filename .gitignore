@@ -1,1 +1,4 @@
 src/config.h
+build/
+CMakeCache.txt
+CMakeFiles/
